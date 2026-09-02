@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DorisA Kitchen & Confectionery</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#fafafa;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+    url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600');
+    background-size:cover;
+    background-position:center;
+    min-height:100vh;
+    color:white;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    position:sticky;
+    top:0;
+    background:rgba(0,0,0,.5);
+    backdrop-filter:blur(10px);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:80px;
+    border-radius:50%;
+}
+
+.logo h2{
+    color:#fff;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    flex-direction:column;
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:65px;
+    margin-bottom:20px;
+    color:#FFD700;
+}
+
+.hero p{
+    max-width:850px;
+    font-size:20px;
+    line-height:1.8;
+}
+
+.btn{
+    margin-top:35px;
+    display:inline-block;
+    padding:15px 40px;
+    background:#008000;
+    color:white;
+    border-radius:50px;
+    text-decoration:none;
+    transition:.4s;
+}
+
+.btn:hover{
+    background:#cc0000;
+}
+
+section{
+    padding:90px 10%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.title h2{
+    font-size:40px;
+    color:#008000;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#cc0000;
+    margin-bottom:15px;
+}
+
+.menu{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.menu-box{
+    background:white;
+    overflow:hidden;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+.menu-box img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.menu-content{
+    padding:20px;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:20px;
+}
+
+.about-text h2{
+    color:#008000;
+    margin-bottom:20px;
+}
+
+.contact{
+    background:#111;
+    color:white;
+    text-align:center;
+}
+
+.contact h2{
+    color:#FFD700;
+    margin-bottom:20px;
+}
+
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:40px;
+}
+
+nav{
+    flex-direction:column;
+    gap:20px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.about{
+    grid-template-columns:1fr;
+}
+}
+</style>
+</head>
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">
+<img src="logo.png" alt="DorisA Kitchen Logo">
+<h2>DorisA Kitchen & Confectionery</h2>
+</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<div class="hero">
+<h1>DorisA Kitchen & Confectionery</h1>
+
+<p>
+Eat Well, Eat Right, Stay Healthy.
+We specialize in all kinds of Continental, Intercontinental and Nigerian delicacies. We provide professional catering and event services and bake all kinds of cakes, pastries and chops for weddings, birthdays, anniversaries and special occasions.
+</p>
+
+<a href="#services" class="btn">Explore Our Services</a>
+
+</div>
+
+</header>
+
+<section id="about">
+
+<div class="about">
+
+<img src="logo.png">
+
+<div class="about-text">
+
+<h2>About Us</h2>
+
+<p style="line-height:2;">
+Established in 2010, DorisA Kitchen & Confectionery is a trusted culinary brand dedicated to providing delicious meals and exceptional services. Our passion is delivering quality food experiences through Nigerian delicacies, continental dishes, confectioneries and event catering services.
+<br><br>
+From intimate gatherings to large celebrations, we ensure every meal is prepared with excellence and served with love.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<div class="title">
+<h2>Our Services</h2>
+</div>
+
+<div class="services">
+
+<div class="card">
+<h3>🍲 Nigerian Delicacies</h3>
+<p>
+Jollof Rice, Fried Rice, Pounded Yam, Egusi Soup, Afang Soup, Pepper Soup and much more.
+</p>
+</div>
+
+<div class="card">
+<h3>🍝 Continental Cuisine</h3>
+<p>
+A variety of international and intercontinental dishes prepared with premium ingredients.
+</p>
+</div>
+
+<div class="card">
+<h3>🎂 Cakes & Confectionery</h3>
+<p>
+Wedding cakes, birthday cakes, anniversary cakes, pastries and desserts.
+</p>
+</div>
+
+<div class="card">
+<h3>🥟 Small Chops</h3>
+<p>
+Samosa, Spring Rolls, Puff Puff, Meat Pie, Chicken Pie and assorted finger foods.
+</p>
+</div>
+
+<div class="card">
+<h3>🍽 Catering Services</h3>
+<p>
+Outdoor and indoor catering services for weddings, birthdays, meetings and corporate events.
+</p>
+</div>
+
+<div class="card">
+<h3>🎉 Event Services</h3>
+<p>
+Professional food and event support tailored to your special occasions.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="menu">
+
+<div class="title">
+<h2>Featured Delicacies</h2>
+</div>
+
+<div class="menu">
+
+<div class="menu-box">
+<img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=800">
+<div class="menu-content">
+<h3>Nigerian Specials</h3>
+<p>Authentic local dishes prepared with excellence.</p>
+</div>
+</div>
+
+<div class="menu-box">
+<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800">
+<div class="menu-content">
+<h3>Continental Cuisine</h3>
+<p>Rich and delicious international dishes.</p>
+</div>
+</div>
+
+<div class="menu-box">
+<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800">
+<div class="menu-content">
+<h3>Cakes & Desserts</h3>
+<p>Beautiful and tasty cakes for every celebration.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<p>
+📍 Nigeria
+</p>
+
+<br>
+
+<p>
+📞 +234 901 616 4239
+</p>
+
+<br>
+
+<p>
+✉️ dorisakitchenandconfectionery@gmail.com
+</p>
+
+<br>
+
+<p>
+"Eat Well, Eat Right, Stay Healthy"
+</p>
+
+</section>
+
+<footer>
+
+© 2026 DorisA Kitchen & Confectionery | Established 2010
+
+</footer>
+
+</body>
+</html>
